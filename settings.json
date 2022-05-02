@@ -1,0 +1,116 @@
+{
+	"COMMNENT_0": "TEN KUR CAPITAL TEN NEVEIKIA",
+	"COMMNENT_1": "AUTOSEVO REIKALAI",
+	"ISJUNGTA.files.autoSaveDelay": 500,
+	"ISJUNGTA.files.autoSave": "afterDelay",
+
+	"COMMENT_2": "PRETTEIER FORMATAVIMAS 'CTR +,'",
+	"COMMENT_3": "NAUDOTI PRETTIER FORMATAVIMO IRANKI",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"COMMENT_4": "FORMATUOTI PO ISSEIVINIMO",
+	"editor.formatOnSave": true,
+	"COMMENT_5": "PO NUKOPINIMO NEFORMATUOTI",
+	"editor.formatOnPaste": false,
+	"COMMENT_6": "KAD NEBUTU KABLELIO PO ..",
+	"prettier.trailingComma": "all",
+	"COMMENT_7": "TABO ILGIS TARPAIS",
+	"prettier.tabWidth": 2,
+	"COMMENT_8": "CIA KAD GALE STATMENT KABLETASKIO NEBUTU",
+	"prettier.semi": false,
+	"COMMENT_9": "VIENGUOS KABUTES",
+	"prettier.singleQuote": true,
+	"COMMENT_10": "KODO ILGIS",
+	"prettier.printWidth": 80,
+	"COMMENT_11": "INDENTAVIMUI NAUDOTI TABUS",
+	"prettier.useTabs": true,
+
+	"ISJUNGTA.emmet.includeLanguages": {
+		"ISJUNGTA.javascript": "javascriptreact"
+	},
+
+	"workbench.editor.showTabs": true,
+
+	"vim.leader": ",",
+	"liveServer.settings.donotShowInfoMsg": true,
+	"workbench.colorTheme": "Abyss",
+	"editor.tabSize": 2,
+	"editor.detectIndentation": false,
+	"editor.snippetSuggestions": "bottom",
+	"editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+	"editor.fontLigatures": false,
+	"editor.lineNumbers": "relative",
+	"vim.easymotion": true,
+	"vim.incsearch": true,
+	"vim.useSystemClipboard": true,
+	"vim.useCtrlKeys": true,
+	"vim.hlsearch": true,
+	"vim.sneak": true,
+	"vim.normalModeKeyBindings": [
+		{
+			"COMMENT": "JUDEJIMAS PIRMYN ATGAL SU TABAIS. TARKIM 'ARGS' VIM'E ATITIKMUO",
+			"before": ["<tab>"],
+			"commands": ["workbench.action.nextEditor"]
+		},
+		{
+			"before": ["<S-tab>"],
+			"commands": ["workbench.action.previousEditor"]
+		}
+	],
+
+	"vim.insertModeKeyBindings": [
+		{
+			"before": ["j", "k"],
+			"after": ["<Esc>"]
+		}
+	],
+
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"COMMENT": "NUIMA PARYSKINIMA PO PAIESKOS",
+			"before": ["<CR>"],
+			"commands": [":nohl"]
+		},
+
+		{
+			"COMMENT": "PERSKELIA EKRANA",
+			"before": ["<leader>", "w"],
+			"commands": ["workbench.action.splitEditor"]
+		},
+
+		{
+			"COMMENT": "SONINI SIDE BARA IJUNGIA/ISJUNGIA, NERDTREE ATITIKMUO",
+			"before": ["<leader>", "<space>"],
+			"commands": ["workbench.action.toggleSidebarVisibility"]
+		},
+
+		{
+			"COMMENT": "PERMETA KURSORIU I SIDEBAR'A",
+			"before": ["<leader>", "f"],
+			"commands": ["revealInExplorer"]
+		},
+
+		{
+			"COMMENT": "VIENA EILUTE ZEMIAU TUSCIA ITERPIA",
+			"before": ["<leader>", "o"],
+			"after": ["o", "<Esc>"]
+		},
+
+		{
+			"COMMENT": "VIENA EILUTE AUKSCIAU TUSCIA ITERPIA",
+			"before": ["<leader>", "O"],
+			"after": ["O", "<Esc>"]
+		},
+
+		{
+			"COMMENT": "CIA PERMETA SAKINIO DALI I KITA EILUTE",
+			"before": ["<leader>", "K"],
+			"after": ["i", "<CR>", "<Esc>"]
+		},
+
+		{
+			"COMMENT": "PAKEICIAU KOMENTAVIMO SHORTCUT",
+			"before": ["<leader>", "/"],
+			"commands": ["editor.action.commentLine"]
+		}
+	]
+}
